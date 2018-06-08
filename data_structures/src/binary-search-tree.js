@@ -10,7 +10,7 @@ class BinarySearchTree {
     const depthSearch = node => {
       cb(node.value);
       if (node.left !== null) depthSearch(node.left);
-      if (node.right !== null) this.depthSearch(node.right);
+      if (node.right !== null) depthSearch(node.right);
     };
     depthSearch(this);
   }
