@@ -1,8 +1,9 @@
 const heapsort = arr => {
   /* Your code here */
+  const heap = new Heap();
   arr.forEach(item => heap.insert(item));
   const newArr = [];
-  while (heap.size()) {
+  while (heap.getSize()) {
     newArr.unshift(heap.delete());
   }
   return newArr;
